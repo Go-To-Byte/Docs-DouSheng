@@ -26,7 +26,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          ref: docs
+          ref: main
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
@@ -52,7 +52,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
-          branch: docs/vueprees
+          branch: docs
           repository-name: Go-To-Byte/Docs-DouSheng
           token: ${{ secrets.GO_TO_BYTE_DEPLOY }}
           folder: docs/.vuepress/dist
