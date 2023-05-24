@@ -2,7 +2,7 @@ name: Deploy Docs-Dousheng
 
 on:
   push:
-    branches: ['docs']
+    branches: ['main']
 
 jobs:
   build:
