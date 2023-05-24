@@ -52,7 +52,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
-          branch: main
+          branch: docs/vueprees
           repository-name: Go-To-Byte/Docs-DouSheng
           token: ${{ secrets.GO_TO_BYTE_DEPLOY }}
           folder: docs/.vuepress/dist
